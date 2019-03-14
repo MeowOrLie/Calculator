@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="266.0" maxWidth="256.0" minHeight="266.0" minWidth="256.0" prefHeight="266.0" prefWidth="256.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+   <children>
+      <HBox maxHeight="80.0" maxWidth="300.0" minHeight="80.0" minWidth="256.0" prefHeight="80.0" prefWidth="256.0">
+         <children>
+            <TextField fx:id="textField" editable="false" maxHeight="80.0" maxWidth="188.0" minHeight="80.0" minWidth="188.0" prefHeight="80.0" prefWidth="188.0">
+               <HBox.margin>
+                  <Insets left="3.0" right="3.0" top="3.0" />
+               </HBox.margin>
+            </TextField>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button maxHeight="35.0" maxWidth="60.0" minHeight="35.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_reset" prefHeight="35.0" prefWidth="60.0" text="Сброс">
+                     <VBox.margin>
+                        <Insets bottom="3.0" right="3.0" top="3.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button maxHeight="35.0" maxWidth="60.0" minHeight="35.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_cancel" prefHeight="35.0" prefWidth="60.0" text="&lt;--">
+                     <VBox.margin>
+                        <Insets bottom="3.0" right="3.0" top="3.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutY="80.0" maxHeight="48.0" maxWidth="256.0" minHeight="48.0" minWidth="256.0" prefHeight="48.0" prefWidth="256.0">
+         <children>
+            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_7" prefHeight="40.0" prefWidth="60.0" text="7">
+               <HBox.margin>
+                  <Insets right="2.0" />
+               </HBox.margin>
+            </Button>
+            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_8" text="8">
+               <HBox.margin>
+                  <Insets left="2.0" right="2.0" />
+               </HBox.margin>
+            </Button>
+            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_9" text="9">
+               <HBox.margin>
+                  <Insets left="2.0" right="2.0" />
+               </HBox.margin>
+            </Button>
+            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_eql" text="=">
+               <HBox.margin>
+                  <Insets left="2.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox layoutY="128.0" maxHeight="46.0" maxWidth="256.0" minHeight="46.0" minWidth="256.0" prefHeight="46.0" prefWidth="256.0">
+         <children>
+            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_4" prefHeight="40.0" prefWidth="60.0" text="4">
+               <HBox.margin>
+                  <Insets right="2.0" />
+               </HBox.margin>
+            </Button>
+            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_5" text="5">
+               <HBox.margin>
+                  <Insets left="2.0" right="2.0" />
+               </HBox.margin>
+            </Button>
+            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_6" text="6">
+               <HBox.margin>
+                  <Insets left="2.0" right="2.0" />
+               </HBox.margin>
+            </Button>
+            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_plus" text="+">
+               <HBox.margin>
+                  <Insets left="2.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </HBox>
+      <HBox layoutY="174.0" maxHeight="46.0" maxWidth="256.0" minHeight="46.0" minWidth="256.0" prefHeight="46.0" prefWidth="256.0">
+         <children>
+            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_1" prefHeight="40.0" prefWidth="60.0" text="1">
+               <HBox.margin>
+                  <Insets right="2.0" />
+               </HBox.margin>
+            </Button>
+            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_2" text="2">
+               <HBox.margin>
+                  <Insets left="2.0" right="2.0" />
+               </HBox.margin>
+            </Button>
+            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_3" text="3">
+               <HBox.margin>
+                  <Insets left="2.0" right="2.0" />
+               </HBox.margin>
+            </Button>
+            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_minus" text="-">
+               <HBox.margin>
+                  <Insets left="2.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </HBox>
+      <HBox layoutY="220.0" maxHeight="48.0" maxWidth="256.0" minHeight="48.0" minWidth="256.0" prefHeight="48.0" prefWidth="256.0">
+         <children>
+            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_double" prefHeight="40.0" prefWidth="60.0" text=".">
+               <HBox.margin>
+                  <Insets right="2.0" />
+               </HBox.margin>
+            </Button>
+            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_0" text="0">
+               <HBox.margin>
+                  <Insets left="2.0" right="2.0" />
+               </HBox.margin>
+            </Button>
+            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_div" text="/">
+               <HBox.margin>
+                  <Insets left="2.0" right="2.0" />
+               </HBox.margin>
+            </Button>
+            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_mul" text="*">
+               <HBox.margin>
+                  <Insets left="2.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>
