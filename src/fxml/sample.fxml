@@ -34,17 +34,17 @@
       </HBox>
       <HBox layoutY="80.0" maxHeight="48.0" maxWidth="256.0" minHeight="48.0" minWidth="256.0" prefHeight="48.0" prefWidth="256.0">
          <children>
-            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_7" prefHeight="40.0" prefWidth="60.0" text="7">
+            <Button fx:id="bb_7" maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#onAction" prefHeight="40.0" prefWidth="60.0" text="7">
                <HBox.margin>
                   <Insets right="2.0" />
                </HBox.margin>
             </Button>
-            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_8" text="8">
+            <Button fx:id="bb_8" maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#onAction" text="8">
                <HBox.margin>
                   <Insets left="2.0" right="2.0" />
                </HBox.margin>
             </Button>
-            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_9" text="9">
+            <Button fx:id="bb_9" maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#onAction" text="9">
                <HBox.margin>
                   <Insets left="2.0" right="2.0" />
                </HBox.margin>
@@ -61,17 +61,17 @@
       </HBox>
       <HBox layoutY="128.0" maxHeight="46.0" maxWidth="256.0" minHeight="46.0" minWidth="256.0" prefHeight="46.0" prefWidth="256.0">
          <children>
-            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_4" prefHeight="40.0" prefWidth="60.0" text="4">
+            <Button fx:id="bb_4" maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#onAction" prefHeight="40.0" prefWidth="60.0" text="4">
                <HBox.margin>
                   <Insets right="2.0" />
                </HBox.margin>
             </Button>
-            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_5" text="5">
+            <Button fx:id="bb_5" maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#onAction" text="5">
                <HBox.margin>
                   <Insets left="2.0" right="2.0" />
                </HBox.margin>
             </Button>
-            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_6" text="6">
+            <Button fx:id="bb_6" maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#onAction" text="6">
                <HBox.margin>
                   <Insets left="2.0" right="2.0" />
                </HBox.margin>
@@ -88,17 +88,17 @@
       </HBox>
       <HBox layoutY="174.0" maxHeight="46.0" maxWidth="256.0" minHeight="46.0" minWidth="256.0" prefHeight="46.0" prefWidth="256.0">
          <children>
-            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_1" prefHeight="40.0" prefWidth="60.0" text="1">
+            <Button fx:id="bb_1" maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#onAction" prefHeight="40.0" prefWidth="60.0" text="1">
                <HBox.margin>
                   <Insets right="2.0" />
                </HBox.margin>
             </Button>
-            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_2" text="2">
+            <Button fx:id="bb_2" maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#onAction" text="2">
                <HBox.margin>
                   <Insets left="2.0" right="2.0" />
                </HBox.margin>
             </Button>
-            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_3" text="3">
+            <Button fx:id="bb_3" maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#onAction" text="3">
                <HBox.margin>
                   <Insets left="2.0" right="2.0" />
                </HBox.margin>
@@ -115,12 +115,12 @@
       </HBox>
       <HBox layoutY="220.0" maxHeight="48.0" maxWidth="256.0" minHeight="48.0" minWidth="256.0" prefHeight="48.0" prefWidth="256.0">
          <children>
-            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_double" prefHeight="40.0" prefWidth="60.0" text=".">
+            <Button fx:id="bb_double" maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#onAction" prefHeight="40.0" prefWidth="60.0" text=".">
                <HBox.margin>
                   <Insets right="2.0" />
                </HBox.margin>
             </Button>
-            <Button maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#bb_0" text="0">
+            <Button fx:id="bb_0" maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#onAction" text="0">
                <HBox.margin>
                   <Insets left="2.0" right="2.0" />
                </HBox.margin>

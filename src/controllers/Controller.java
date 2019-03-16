@@ -1,63 +1,105 @@
 package controllers;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class Controller {
+
+public class Controller implements Initializable {
+
     private String sign = "";
     private String lv = "";
     private String rv = "";
     public String str = "";
     public static boolean newValue = false;
 	public static boolean newSign = true;
-    public static double result;
+
+
 
     @FXML
     private TextField textField;
 
-    public void bb_0() {
-        add("0");
+
+    @FXML
+    private Button bb_0;
+
+    @FXML
+    private Button bb_1;
+
+    @FXML
+    private Button bb_2;
+
+    @FXML
+    private Button bb_3;
+
+    @FXML
+    private Button bb_4;
+
+    @FXML
+    private Button bb_5;
+
+    @FXML
+    private Button bb_6;
+
+    @FXML
+    private Button bb_7;
+
+    @FXML
+    private Button bb_8;
+
+    @FXML
+    private Button bb_9;
+
+    @FXML
+    private Button bb_double;
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
     }
 
-    public void bb_1() {
-        add("1");
-    }
-
-    public void bb_2() {
-        add("2");
-    }
-
-    public void bb_3() {
-        add("3");
-    }
-
-    public void bb_4() {
-        add("4");
-    }
-
-    public void bb_5() {
-        add("5");
-    }
-
-    public void bb_6() {
-        add("6");
-    }
-
-    public void bb_7() {
-        add("7");
-    }
-
-    public void bb_8() {
-        add("8");
-    }
-
-    public void bb_9() {
-        add("9");
-    }
-
-    public void bb_double() {
-        add(".");
+    @FXML
+    void onAction(ActionEvent e) {
+        while (true) {
+            if (e.getSource() == bb_0) {
+                add("0");
+                break;
+            } else if (e.getSource() == bb_1) {
+                add("1");
+                break;
+            } else if (e.getSource() == bb_2) {
+                add("2");
+                break;
+            } else if (e.getSource() == bb_3) {
+                add("3");
+                break;
+            } else if (e.getSource() == bb_4) {
+                add("4");
+                break;
+            } else if (e.getSource() == bb_5) {
+                add("5");
+                break;
+            } else if (e.getSource() == bb_6) {
+                add("6");
+                break;
+            } else if (e.getSource() == bb_7) {
+                add("7");
+                break;
+            } else if (e.getSource() == bb_8) {
+                add("8");
+                break;
+            } else if (e.getSource() == bb_9) {
+                add("9");
+                break;
+            } else if (e.getSource() == bb_double) {
+                add(".");
+                break;
+            }
+        }
     }
 
     private void add(String txt) {
@@ -158,23 +200,23 @@ public class Controller {
 			Double drv = Double.parseDouble(rv);
 			switch (sign) {
 				case "*":
-					result = dlv * drv;
+                    dlv = dlv * drv;
 					break;
 				case "/":
-					result = dlv / drv;
+                    dlv = dlv / drv;
 					break;
 				case "+":
-					result = dlv + drv;
+                    dlv = dlv + drv;
 					break;
 				case "-":
-					result = dlv - drv;
+                    dlv = dlv - drv;
 					break;
 				default:
 					break;
 			}
 
 			if (sign != "") {
-				lv = String.valueOf(result);
+				lv = String.valueOf(dlv);
 				sign = "";
 				rv = "";
 			}
