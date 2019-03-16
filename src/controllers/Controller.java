@@ -20,10 +20,8 @@ public class Controller implements Initializable {
 	public static boolean newSign = true;
 
 
-
     @FXML
     private TextField textField;
-
 
     @FXML
     private Button bb_0;
@@ -192,6 +190,9 @@ public class Controller implements Initializable {
     private void recalc() {
         if(sign != "" && rv != "") {
             calc();
+            newValue = false;
+            newSign = true;
+
         }
     }
     public void calc() {
