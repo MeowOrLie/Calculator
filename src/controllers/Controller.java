@@ -23,82 +23,19 @@ public class Controller implements Initializable {
     @FXML
     private TextField textField;
 
-    @FXML
-    private Button bb_0;
-
-    @FXML
-    private Button bb_1;
-
-    @FXML
-    private Button bb_2;
-
-    @FXML
-    private Button bb_3;
-
-    @FXML
-    private Button bb_4;
-
-    @FXML
-    private Button bb_5;
-
-    @FXML
-    private Button bb_6;
-
-    @FXML
-    private Button bb_7;
-
-    @FXML
-    private Button bb_8;
-
-    @FXML
-    private Button bb_9;
-
-    @FXML
-    private Button bb_double;
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
     }
 
     @FXML
     void onAction(ActionEvent e) {
-        while (true) {
-            if (e.getSource() == bb_0) {
-                add("0");
-                break;
-            } else if (e.getSource() == bb_1) {
-                add("1");
-                break;
-            } else if (e.getSource() == bb_2) {
-                add("2");
-                break;
-            } else if (e.getSource() == bb_3) {
-                add("3");
-                break;
-            } else if (e.getSource() == bb_4) {
-                add("4");
-                break;
-            } else if (e.getSource() == bb_5) {
-                add("5");
-                break;
-            } else if (e.getSource() == bb_6) {
-                add("6");
-                break;
-            } else if (e.getSource() == bb_7) {
-                add("7");
-                break;
-            } else if (e.getSource() == bb_8) {
-                add("8");
-                break;
-            } else if (e.getSource() == bb_9) {
-                add("9");
-                break;
-            } else if (e.getSource() == bb_double) {
-                add(".");
-                break;
-            }
-        }
+        String id = ((Button)e.getSource()).getId();
+        String txt = id.substring(3);
+        if(txt == "double") txt = ".";
+        add(txt);
     }
+
+
 
     private void add(String txt) {
     	if (newValue) {
