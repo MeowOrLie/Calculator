@@ -31,7 +31,7 @@ public class Controller implements Initializable {
     void onAction(ActionEvent e) {
         String id = ((Button)e.getSource()).getId();
         String txt = id.substring(3);
-        if(txt == "double") txt = ".";
+        if(txt.equals("double")) txt = ".";
         add(txt);
     }
 
@@ -97,27 +97,20 @@ public class Controller implements Initializable {
     }
 
     public void bb_cancel(){
-    	while (true) {
     		if (newValue) {
     			bb_reset();
-    			break;
 			}
 			str = textField.getText();
 			str = removeCharAt(str, str.length()-1);
 			textField.setText(str);
 			if (rv != "") {
 				rv = removeCharAt(rv, rv.length()-1);
-				break;
 			} else if (sign != "") {
 				sign = removeCharAt(rv, sign.length()-1);
 				newSign = false;
-				break;
 			} else if (lv != "") {
 				lv = removeCharAt(rv, lv.length()-1);
-				break;
 			}
-			break;
-		}
     }
 
 	public static String removeCharAt(String s, int pos) {
